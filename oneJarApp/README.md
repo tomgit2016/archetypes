@@ -42,6 +42,20 @@ To remove the jar-with-dependencies suffix from the built jar file name, set **<
         </descriptorRefs>
 ```
 
+To include `.gitignore` file, add **<addDefaultExcludes>false</addDefaultExcludes>** to root's `pom.xml`
+
+```xml
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-resources-plugin</artifactId>
+  <version>3.1.0</version>
+  <configuration>
+    <!-- Required so that .gitignore gets included in archetypes -->
+    <!-- See https://issues.apache.org/jira/browse/MRESOURCES-190 -->
+    <addDefaultExcludes>false</addDefaultExcludes>
+  </configuration>
+```
+
 To remove Archetypes from IntelliJ IDEA 2020.2 on Mac
 
 ```bash
