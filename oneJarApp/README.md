@@ -27,7 +27,7 @@ mvn archetype:generate -DarchetypeCalalog=local
 
  ### Notes
 
-To remove the jar-with-dependencies suffix from the built jar file name, set **<finalName>** and **<appendAssemblyId>false</appendAssemblyId>** in `src/main/resources/archetype-resources/pom.xml`
+To remove the jar-with-dependencies suffix from the built jar file name, set **`<finalName>`** and **`<appendAssemblyId>false</appendAssemblyId>`** in `src/main/resources/archetype-resources/pom.xml`
 
 ```xml
 <plugin>
@@ -42,7 +42,7 @@ To remove the jar-with-dependencies suffix from the built jar file name, set **<
         </descriptorRefs>
 ```
 
-To include `.gitignore` file, add **<addDefaultExcludes>false</addDefaultExcludes>** to root's `pom.xml`
+To include `.gitignore` file, add **`<addDefaultExcludes>false</addDefaultExcludes>`** to root's `pom.xml`
 
 ```xml
 <plugin>
