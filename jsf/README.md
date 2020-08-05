@@ -2,7 +2,7 @@
 
 ### Why create one
 
-JSF is much less popular as Springboot. I could not find one fits me so create this one to save tone of boilerplate process. It's base on Java 8 and EE 7. 
+JSF is much less popular than Springboot. I could not find one fits my need so create this one to save tone of boilerplate process. It's base on Java 8 and EE 7. 
 
 ### The structure
 
